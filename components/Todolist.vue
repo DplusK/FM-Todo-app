@@ -77,12 +77,13 @@ export default {
 .slideIn-enter-active,
 .slideIn-leave-active {
   transition: all 0.3s ease-out;
+  z-index: 0;
 }
 
 .slideIn-enter,
 .slideIn-leave-to {
   /* .fade-leave-active below version 2.1.8 */
-  transform: translateY(50px);
+  transform: translateY(-50px);
   opacity: 0;
 }
 </style>

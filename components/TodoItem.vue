@@ -2,6 +2,7 @@
   <keep-alive>
     <div
       :ref="todo.text + index"
+      :class="index == 0 ? 'rounded-t-md' : ''"
       class="bg-white dark:bg-d-vdg-blue flex px-6 h-65 items-center text-l-d-blue dark:text-d-lg-blue border-b-2 border-l-l-gray dark:border-gray-600"
     >
       <span class="flex items-center cursor-pointer" @click="toggle(todo)">
