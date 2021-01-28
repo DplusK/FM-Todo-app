@@ -9,10 +9,18 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   caret-color: transparent;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 input {
   caret-color: auto;
 }
 :focus {
   outline: none;
+}
+::-webkit-scrollbar {
+  display: none;
 }
