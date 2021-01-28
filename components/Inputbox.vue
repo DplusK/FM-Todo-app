@@ -7,6 +7,8 @@
       :class="check ? 'bg-gradient-to-br from-tick-bright to-tick-dark' : ''"
     ></div>
     <input
+      name="create-todo"
+      title="create-todo"
       @keyup.enter="addTodo"
       class="bg-transparent placeholder-l-d-blue text-l-d-blue dark:text-d-lg-blue flex-1 pt-1"
       type="text"
